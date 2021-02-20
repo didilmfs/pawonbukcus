@@ -1,0 +1,439 @@
+/* ini merupakan komentar satu baris */
+ 
+/* CSS juga mendukung komentar lebih dari satu baris,
+  seluruh teks yang berada pada pembuka dan penutup sebuah komentar
+  akan diabaikan oleh browser sebagai compiler.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+ 
+body {
+  font-family: 'Bebas Neue', cursive;
+  /* font-weight: lighter; */
+  margin: 0;
+  padding: 0;
+  color: #140E0E;
+}
+ 
+ 
+h1, h2  span{
+  background: #140E0E;
+  color: #EABA00;
+  padding: 5px 15px;
+  display:inline-block;
+}
+
+h3, h4 {
+  color: #170F0D
+}
+ 
+ 
+footer {
+  padding: 20px;
+  color: white;
+}
+
+
+nav a:hover {
+  color: white
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  width: 30%;
+}
+
+.profile {
+  background-color: white;
+}
+
+.profile header {
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #140E0E;
+  text-align: center;
+}
+
+
+.profile img {
+  width: 200px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-makanan {
+  display: flex;
+  flex-direction: row;
+  overflow: auto
+}
+
+
+.jumbotron {
+  font-size: 20px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron-bg {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 600px;
+}
+
+
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 15px;
+}
+
+nav {
+  background-color: #140E0E;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav a {
+  font-size: 2em;
+  font-weight: 400;
+  text-decoration: none;
+  color: #EABA00;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  width: 100%;
+  font-size: 1.7em;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+  padding: 50px;
+  background-color: #EABA00;
+}
+
+aside img {
+  border-radius: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: inline;
+}
+
+.container {
+  width: 100%;
+  overflow: auto;
+}
+
+#about img {
+  width: 20%;
+  height: auto;
+  margin-left: 5%
+}
+
+#about p {
+  width: 70%;
+  float: left;
+  
+}
+
+#about {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#menu {
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+#contact {
+  padding-top: 5%;
+  padding-bottom: 30%;
+}
+
+.makanan {
+  width: 20%;
+  height: auto;
+  margin: 0;
+  float: left;
+  transition: 0.3s;
+  cursor: pointer;
+  filter: brightness(50%);
+}
+
+.makanan:hover {
+  filter: brightness(100%);
+}
+
+section a {
+  color: #140E0E;
+  text-decoration:none;
+}
+
+section a:hover {
+  color: #EABA00;
+}
+
+section img {
+  width: 5%;
+  height: auto;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contact section {
+  float: left;
+  width: 25%;
+}
+
+#contact section img {
+  width: 15%;
+  height: auto;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+      width: 100%;
+      padding: 0;
+  }
+  .jumbotron {
+    font-size: 20px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    background-image: url("assets/image/jumbotron-bg.jpeg");
+    text-align: center;
+    color: white;
+  }
+  
+  .jumbotron-bg {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 200px;
+  }
+  
+  #about img {
+    width: 50%;
+    height: auto;
+  }
+
+  #about {
+    width: 100%;
+    padding-top: 20%;
+    padding-bottom: 10%;
+  }
+  
+  #menu {
+    padding-top: 20%;
+    padding-bottom: 10%;
+  }
+  
+  #contact {
+    padding-top: 20%;
+    padding-bottom: 10%;
+  }
+
+  .makanan {
+    width: 100%;
+    padding: 1%;
+    height: auto;
+    margin: 0;
+    float: left;
+    filter: brightness(100%);
+  }
+
+  section img {
+    width: 1%;
+    height: auto;
+  }
+
+  .profile img {
+    width: 100%;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+  }
+
+  aside {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    background-color: #EABA00;
+  }
+
+  nav a {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #EABA00;
+  }
+  #contact section {
+    float: none;
+    width: 100%;
+  }
+}
