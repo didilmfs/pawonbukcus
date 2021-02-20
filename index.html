@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Pawon Buk Cus</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body id="top">
+   <header>
+      <nav>
+          <ul class="flex-nav">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about" class="">About</a></li>
+            <li><a href="#menu" class="">Menu</a></li>
+            <li><a href="#contact" class="">Contact</a></li>
+          </ul>
+      </nav>
+      <div class="jumbotron">
+         <img src="assets/image/jumbotron-bg.jpeg" class="jumbotron-bg" alt="logo">
+      </div>
+   </header>
+   <main>
+      <div id="content">
+         <article id="about" class="flex-column">
+            <div class="flex-row">
+             <h2><span>ABOUT</span></h2>
+            </div>
+            <div class="container">
+             <p>Pawon Buk Cus lahir karena adanya Pandemi Covid-19. Yang unik dari Pawon Buk Cus adalah kami warung makan namun tidak menyediakan tempat makan. 
+                Ya karena pandemi harus 3M, jadi warung makan tanpa tempat makan bukanlah masalah besar, 
+                sudah menjadi kenormalan baru. Jadi basicly kami sudah tidak unik, wkwkwk. </p>
+               <p> Tapi, ada hal unik lain dari PBC. Chef PBC sudah berpengalaman bertahun-tahun memasak berbagai varian makanan ayam goreng. 
+                Kami mengkombinasikan masakan ayam khas jepang yaitu katsu dengan keunikan Indonesia. Emang enak? Gimana rasanya? 
+                mungkin dari tampilan belum bisa secantik katsu dari jepang, Tapi kami jamin rasanya bakalan joss gandoss maknyuss sak poll e wuuenak tenannn!!!
+                #SINGPENTINGENAK. </p>
+                <p>Penasaran? Penasaran bangettt? Langsung scroll ke bawah aja...</p>
+             <img src="assets/image/logo-pbc-min.jpg" class="" alt="logo">
+            </div>
+         </article>
+
+         <article id="menu" class="flex-column">
+            <div class="flex-makanan">
+               <h2><span>MENU</span></h2>
+            </div>
+            <p>ALL MENU ONLY 11K!!!<br> SERIUSSS... GA BOONG.. <br> CUMAN RP11.000 SUDAH BISA MENIKMATI MAHAKARYA PAWON BUK CUS!!!</p>
+            <div class="container">
+               <img src="assets/image/pbc-menu1.jpeg" onclick="openModal();currentSlide(1)" class="makanan" alt="Menu1">
+               <img src="assets/image/pbc-menu2.jpeg" onclick="openModal();currentSlide(2)" class="makanan" alt="Menu2">
+               <img src="assets/image/pbc-menu3.jpeg" onclick="openModal();currentSlide(3)" class="makanan" alt="Menu3">
+               <img src="assets/image/pbc-menu4.jpeg" onclick="openModal();currentSlide(4)" class="makanan" alt="Menu4">
+               <img src="assets/image/pbc-menu5.jpeg" onclick="openModal();currentSlide(5)" class="makanan" alt="Menu5">
+               <div id="myModal" class="modal">
+                  <span class="close cursor" onclick="closeModal()">&times;</span>
+                  <div class="modal-content">
+
+                     <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="assets/image/pbc-menu1.jpeg" style="width:100%">
+                     </div>
+
+                     <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="assets/image/pbc-menu2.jpeg" style="width:100%">
+                     </div>
+
+                     <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="assets/image/pbc-menu3.jpeg" style="width:100%">
+                     </div>
+
+                     <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="assets/image/pbc-menu4.jpeg" style="width:100%">
+                     </div>
+
+                     <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="assets/image/pbc-menu5.jpeg" style="width:100%">
+                     </div>
+
+                     <!-- Next/previous controls -->
+                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                     <!-- Caption text -->
+                     <div class="caption-container">
+                        <p id="caption"></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article id="contact" class="">
+            <h2><span>CONTACT</span></h2>
+               <section>
+                  <h3>Alamat</h3>
+                  <img src="assets/icon/location.png" class="" alt="location">
+                  <p>Jl. Kenari No 518, RT 01, RW 02, Kelurahan Salatiga, Kecamatan Sidorejo, Kota Salatiga, Jawa Tengah, 50711</p>
+               </section>
+               <section>
+                  <h3>No Handphone</h3>
+                  <a href="https://api.whatsapp.com/send?phone=+628123123&text=Halo, Apakah Pawon Buk Cus buka?"><img src="assets/icon/whatsapp.png" class="" alt="whatsapp"></a>
+                  <p><a href="https://api.whatsapp.com/send?phone=+6281327900274&text=Halo, Apakah Pawon Buk Cus buka?"> +62 8123123123</a></p>
+               </section>
+               <section>
+                  <h3>Instagram</h3>
+                  <a href="https://www.instagram.com/pawon.bukcus/"><img src="assets/icon/instagram.png" class="" alt="instagram"></a>
+                  <p><a href="https://www.instagram.com/pawon.bukcus/">pawon.bukcus</a></p>
+               </section>
+               <section>
+                  <h3>GoFood</h3>
+                  <a href="https://gofood.co.id/english/semarang/restaurant/pawon-buk-cus-44df2b0c-f379-4c1c-9910-5703e2248feb"><img src="assets/icon/gofood.png" class="" alt="gofood"></a>
+                  <p><a href="https://gofood.co.id/english/semarang/restaurant/pawon-buk-cus-44df2b0c-f379-4c1c-9910-5703e2248feb">GoFood Pawon Buk Cus</a></p>
+               </section>
+         </article>
+      </div>
+      <aside>
+         <article class="profile card">
+             <header>
+               <h2>Muhammad Fadhilah Sukmojatmiko</h2>
+               <figure>
+                  <img src="assets/image/FotoProfil.jpg">
+               </figure>
+               <p>Web Developer</p>
+            </header>
+            <section>
+               
+            </section>
+         </article>
+     </aside>
+   </main>
+   <footer>
+      <p>Pawon Buk Cus &#169; 2021</p>
+   </footer>
+   
+
+   <script src="assets/modal.js"></script>
+</body>
+</html>
